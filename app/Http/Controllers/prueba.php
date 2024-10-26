@@ -36,8 +36,6 @@ class prueba extends Controller
 
         $usuarios = ['rodri', 'nico', 'adri'];
 
-
-
         // $data = [
         //     [
         //         "id" => 1,
@@ -52,5 +50,15 @@ class prueba extends Controller
         // ];
         return $usuarios[$id];
         // return array_filter($data, (fn($d) => $d['id'] == $id));
+    }
+
+
+    function create()
+    {
+        return "Create products";
+    }
+    function update($id)
+    {
+        return "Updating product with id: $id";
     }
 }

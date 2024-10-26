@@ -21,7 +21,16 @@ Route::get('/hola', function () {
 });
 
 
-Route::get('/pepito', prueba::class . '@pepito');
+Route::get('/products', function () {
+    return 'Read products';
+});
+
+Route::post('/products', prueba::class . '@create');
+Route::put('/products/{id}', prueba::class . '@update');
+
+Route::delete('/products/{id}', function ($id) {
+    return "Delete product with id: $id";
+});
 
 
 // Route::get('/saludo', prueba::class . '@saludo');
