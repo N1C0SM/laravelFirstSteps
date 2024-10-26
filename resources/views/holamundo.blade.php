@@ -17,6 +17,8 @@
             <li>{{$item}}</li>
         @endforeach
     </ul>
+    <h2>El curso es: {{$curso}}</h2>
+    <h2>{{$centro}}</h2>
 </body>
 
 </html>
